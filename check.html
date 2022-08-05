@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+    <title>Playground</title>
+</head>
+
+<body>
+    <h1 style="background-color: {{color_two}}; color: {{color_one}};">*** CHECKER BOARD***</h1>
+    <table>
+        <tbody>
+            {% for i in range(0,row) %}
+            <tr>
+                {% for x in range(0,col) %}
+                {% if (x+i) % 2 == 0 %}
+                <td style="background-color: {{color_one}};"></td>
+                {% else %}
+                <td style="background-color: {{color_two}};"></td>
+                {% endif %}
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+</html>
