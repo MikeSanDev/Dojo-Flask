@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+th {
+  color: yellow;
+  vertical-align: middle;
+}
+
+table {
+  width: 100%;
+  margin: 20px 200px;
+  align-content: center;
+  text-align: center;
+}
+
+td {
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+}
